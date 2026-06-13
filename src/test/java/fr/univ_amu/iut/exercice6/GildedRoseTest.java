@@ -18,7 +18,7 @@ import org.junit.jupiter.api.Test;
 class GildedRoseTest {
 
   // =========================================================================
-  //  Articles normaux
+  // Articles normaux
   // =========================================================================
 
   @Test
@@ -45,7 +45,7 @@ class GildedRoseTest {
   }
 
   // =========================================================================
-  //  Aged Brie
+  // Aged Brie
   // =========================================================================
 
   @Test
@@ -70,7 +70,7 @@ class GildedRoseTest {
   }
 
   // =========================================================================
-  //  Sulfuras
+  // Sulfuras
   // =========================================================================
 
   @Test
@@ -90,7 +90,7 @@ class GildedRoseTest {
   }
 
   // =========================================================================
-  //  Backstage passes
+  // Backstage passes
   // =========================================================================
 
   @Test
@@ -129,10 +129,9 @@ class GildedRoseTest {
   }
 
   // =========================================================================
-  //  Conjured (nouvelle fonctionnalité - à activer après le refactoring)
+  // Conjured (nouvelle fonctionnalité - à activer après le refactoring)
   // =========================================================================
 
-  @Disabled("Activer après avoir refactoré et ajouté le support des articles Conjured")
   @Test
   void un_conjured_avant_peremption_baisse_de_2() {
     Item[] items = {new Item("Conjured Mana Cake", 5, 10)};
@@ -140,7 +139,6 @@ class GildedRoseTest {
     assertThat(items[0].quality).isEqualTo(8);
   }
 
-  @Disabled("Activer après avoir refactoré et ajouté le support des articles Conjured")
   @Test
   void un_conjured_apres_peremption_baisse_de_4() {
     Item[] items = {new Item("Conjured Mana Cake", 0, 10)};
@@ -148,7 +146,6 @@ class GildedRoseTest {
     assertThat(items[0].quality).isEqualTo(6);
   }
 
-  @Disabled("Activer après avoir refactoré et ajouté le support des articles Conjured")
   @Test
   void un_conjured_ne_devient_pas_negatif() {
     Item[] items = {new Item("Conjured Mana Cake", 5, 1)};
